@@ -1,0 +1,65 @@
+body::before{
+    content: "";
+    background: url("../img/BG.jpg") no-repeat center -58px/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.container{
+    border-radius: 25px;
+}
+
+.heading{
+    font-size: 40px;
+    font-family: 'Prata', serif;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bolder;
+}
+
+.BGchange{
+    width: 100vw;
+    height: 40vh;
+}
+
+.Red{
+    font-size: x-large;
+    color: red;
+}
+
+.Green{
+    font-size: x-large;
+    color: green;
+}
+
+.Blue{
+    font-size: x-large;
+    color: blue;
+}
+
+.red_val{
+    font-size: x-large;
+    color: red;
+    float: right;
+}
+
+.green_val{
+    font-size: x-large;
+    color: green;
+    float: right;
+}
+
+.blue_val{
+    font-size: x-large;
+    color: blue;
+    float: right;
+}
+
+.colorvalue{
+    padding: 106px 0px;
+    color: black;
+}

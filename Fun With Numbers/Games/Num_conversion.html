@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Yuji+Syuku&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style_NC.css">
+  <title>Number Conversion</title>
+</head>
+
+<body>
+  <marquee class="font-weight-bolder heading">
+    Enter&nbsp;&nbsp;number&nbsp;&nbsp;and&nbsp;&nbsp;click&nbsp;&nbsp;on&nbsp;&nbsp;convert&nbsp;&nbsp;for&nbsp;&nbsp;converting&nbsp;&nbsp;from&nbsp;&nbsp;one&nbsp;&nbsp;base&nbsp;&nbsp;to&nbsp;&nbsp;another...
+  </marquee>
+  <br>
+  <div class="container my-5 border-primary bg-light">
+    <br>
+    
+    <form autocomplete="off">
+      <div class="form-group">
+        <label for="number" class="font-weight-bold form-instruction">Enter number</label>
+        <input type="text" id="number" name="x" class="form-control form-control-lg" required autofocus>
+      </div>
+      <div class="form-group">
+        <label for="sel1" class="font-weight-bold form-instruction">From Base</label>
+        <select name="sel1" id="sel1" class="form-control" required>
+          <option value="2 (binary)">2 (binary)</option>
+          <option value="8 (octal)">8 (octal)</option>
+          <option value="10 (decimal)" selected>10 (decimal)</option>
+          <option value="16 (hex)">16 (hex)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="sel2" class="font-weight-bold form-instruction">To base</label>
+        <select name="sel2" id="sel2" class="form-control" required>
+          <option value="Select Other than above" disabled selected>Select Other than above</option>
+          <option value="2 (binary)">2 (binary)</option>
+          <option value="8 (octal)">8 (octal)</option>
+          <option value="10 (decimal)" disabled>10 (decimal)</option>
+          <option value="16 (hex)">16 (hex)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <button type="submit" title="Convert" class="btn btn-dark" id="liveToastBtn"
+          onclick="onConvert(event)">Convert</button>
+        <button type="reset" title="Reset" class="btn btn-dark">Reset</button>
+        <button type="menu" title="Swap" class="btn btn-dark" onclick="onSwap(event)">Swap</button>
+      </div>
+      <div class="form-group">
+        <label for="answer" class="font-weight-bold form-instruction">Resultant number</label>
+        <textarea rows="2" id="answer" class="form-control form-control-lg" readonly></textarea>
+      </div>
+    </form>
+    <br>
+  </div>
+  <script src="js/NC.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
